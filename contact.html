@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact - My Blog</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:wght@700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+  <script defer src="script.js"></script>
+  <link rel="icon" type="image/png" href="images/log2.png">
+</head>
+<body>
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+  
+  <header>
+    <div class="scroll-progress"></div>
+    <nav class="navbar">
+      <h1 class="logo typing-title">My Blog</h1>
+      <button class="mobile-menu-btn" aria-label="Toggle menu">☰</button>
+      <ul class="nav-links">
+        <li><a href="home.html" class="split-reveal">Home</a></li>
+        <li><a href="about.html" class="split-reveal">About</a></li>
+        <li><a href="contact.html" class="split-reveal">Contact</a></li>
+      </ul>
+      <button class="theme-toggle perspective-flip" aria-label="Toggle theme">🌓</button>
+    </nav>
+  </header>
+
+  <main id="main-content" class="container">
+    <section class="contact-hero morph-bg">
+      <div class="contact-hero-content">
+        <h1 class="typing-title">Get in Touch</h1>
+        <p class="split-reveal">Have questions or want to collaborate? I'd love to hear from you!</p>
+      </div>
+      <div class="contact-hero-image">
+        <img src="images/Devdiaries.png" alt="Modern workspace with communication tools" class="morph-bg">
+      </div>
+    </section>
+
+    <section class="contact-content">
+      <div class="contact-grid">
+        <div class="contact-form-container morph-bg">
+          <h2 class="typing-title">Send a Message</h2>
+          <form id="contact-form" class="contact-form" onsubmit="return validateForm()">
+            <div class="form-group">
+              <label for="name">Name</label>
+              <input type="text" id="name" name="name" required class="form-input" 
+                     aria-required="true" minlength="2" maxlength="50" 
+                     placeholder="Enter your name">
+            </div>
+            <div class="form-group">
+              <label for="email">Email</label>
+              <input type="email" id="email" name="email" required class="form-input" 
+                     aria-required="true" 
+                     placeholder="Enter your email address">
+            </div>
+            <div class="form-group">
+              <label for="subject">Subject</label>
+              <input type="text" id="subject" name="subject" required class="form-input" 
+                     aria-required="true" minlength="2" maxlength="100" 
+                     placeholder="Enter message subject">
+            </div>
+            <div class="form-group">
+              <label for="message">Message</label>
+              <textarea id="message" name="message" required class="form-input" 
+                        aria-required="true" minlength="10" maxlength="1000" 
+                        placeholder="Enter your message"></textarea>
+            </div>
+            <button type="submit" class="submit-btn perspective-flip">Send Message</button>
+          </form>
+        </div>
+
+        <div class="contact-info morph-bg">
+          <div class="info-card">
+            <img src="images/log2.png" alt="Location icon" class="info-icon">
+            <h3 class="typing-title">Kenya</h3>
+            <p class="split-reveal">714 - 00208<br>Ngong, Nairobi</p>
+          </div>
+          <div class="info-card">
+            <img src="images/log2.png" alt="Email icon" class="info-icon">
+            <h3 class="typing-title">Email</h3>
+            <p class="split-reveal">catenimowambu@gmail.com</p>
+          </div>
+          <div class="info-card">
+            <img src="images/log2.png" alt="Social media icon" class="info-icon">
+            <h3 class="typing-title">Social Media</h3>
+            <div class="social-links">
+              <a href="#" class="social-link perspective-flip" aria-label="Twitch">
+                <img src="images/Twitch.png" alt="Twitch icon">
+              </a>
+              <a href="#" class="social-link perspective-flip" aria-label="Youtube">
+                <img src="images/Youtube.png" alt="Youtube icon">
+              </a>
+              <a href="#" class="social-link perspective-flip" aria-label="LinkedIn">
+                <img src="images/Linkedin.png" alt="LinkedIn icon">
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="map-section morph-bg">
+        <h2 class="typing-title">Find Us</h2>
+        <div class="map-container">
+          <img src="images/Devdiaries.png" alt="Map showing our location" class="map-image">
+        </div>
+      </div>
+    </section>
+
+    <section class="faq-section morph-bg">
+      <h2 class="typing-title">Frequently Asked Questions</h2>
+      <div class="faq-grid">
+        <div class="faq-item">
+          <img src="images/Animation.png" alt="Collaboration illustration" class="faq-image">
+          <h3 class="typing-title">How can we collaborate?</h3>
+          <p class="split-reveal">I'm always open to exciting collaborations! Reach out through the contact form with your ideas.</p>
+        </div>
+        <div class="faq-item">
+          <img src="images/Devdiaries.png" alt="Response time illustration" class="faq-image">
+          <h3 class="typing-title">What's your response time?</h3>
+          <p class="split-reveal">I typically respond to all inquiries within 24-48 hours during business days.</p>
+        </div>
+        <div class="faq-item">
+          <img src="images/Animation.png" alt="Content creation illustration" class="faq-image">
+          <h3 class="typing-title">Do you accept guest posts?</h3>
+          <p class="split-reveal">Yes! I welcome guest posts that align with my blog's themes and values.</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <button class="back-to-top perspective-flip" aria-label="Back to top">↑</button>
+
+  <footer>
+    <div class="footer-content">
+      <div class="footer-logo">
+        <img src="images/log2.png" alt="Blog logo" class="footer-logo-img">
+      </div>
+      <p class="split-reveal">&lt;&lt;&lt; &copy; Catherine Wambu. 2025 My Blog. All rights reserved. &gt;&gt;&gt</p>
+    </div>
+  </footer>
+</body>
+</html>
