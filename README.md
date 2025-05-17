@@ -1,4 +1,4 @@
-# My Blog
+# My Blog : https://deluxe-kulfi-6d2ebb.netlify.app/ 
 
 A modern, responsive, and accessible blog website built with HTML, CSS, and JavaScript. This project features a clean design, smooth animations, dark mode, and interactive components for an engaging user experience.
 
